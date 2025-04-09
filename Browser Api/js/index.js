@@ -41,8 +41,14 @@ pegarPeloName[0].value = 'Kaiky.com'
 
 // Criando elementos na pagina
 const listaUl = document.querySelector('ul#lista')
+const listasLis = document.querySelectorAll('ul > li') // Tem que ser o ALL
+
 const novaTagLi = document.createElement('li')// Criando tag
-novaTagLi.textContent = '2 texto' // Adcionando texto
+novaTagLi.textContent = '2 item' // Adcionando texto
 
 
-listaUl.appendChild(novaTagLi)
+// listaUl.appendChild(novaTagLi)
+
+listaUl.insertBefore(novaTagLi, listasLis[1])
+
+listaUl.removeChild(novaTagLi)
