@@ -1,4 +1,5 @@
 // Selecionar elementos HTML
+//Retorna o Array
 
 // 1.Pelo nome da tag
 const todosH1 = document.getElementsByTagName('h1')
@@ -26,7 +27,7 @@ console.log(p)
 
 console.clear()
 
-// Acessando/ alterando conteudo das tags
+// Acessando/alterando conteudo das tags
 const primeiroParagrafo = document.querySelector('p.paragrafo')
 console.log('textContent: ', primeiroParagrafo.textContent) // Só texto
 console.log('innerHtml: ', primeiroParagrafo.innerHTML) //Pega as tags
@@ -34,3 +35,14 @@ console.log('innerHtml: ', primeiroParagrafo.innerHTML) //Pega as tags
 primeiroParagrafo.textContent = 'Outra coisa'
 primeiroParagrafo.innerHTML = 'Outra <strong>coisa<strong/>'
 
+console.clear()
+
+pegarPeloName[0].value = 'Kaiky.com'
+
+// Criando elementos na pagina
+const listaUl = document.querySelector('ul#lista')
+const novaTagLi = document.createElement('li')// Criando tag
+novaTagLi.textContent = '2 texto' // Adcionando texto
+
+
+listaUl.appendChild(novaTagLi)
