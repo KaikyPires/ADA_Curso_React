@@ -24,9 +24,7 @@ diminuirButton.addEventListener('click', ()=> {
     else{
         contador.style.color = 'red'
         alert('Valor zerado')
-       
     }
-    
 })
 
 input.addEventListener('input', () =>{
