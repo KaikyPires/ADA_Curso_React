@@ -3,6 +3,7 @@ const diminuirButton = document.querySelector('#diminuir')
 
 const contador = document.querySelector('#contador')
 
+const input = document.querySelector('input')
 aumentarButton.addEventListener('click', (event) =>{
     const valorAtual = Number(contador.textContent)
 
@@ -11,6 +12,15 @@ aumentarButton.addEventListener('click', (event) =>{
 
 diminuirButton.addEventListener('click', ()=> {
     const valorAtual = Number(contador.textContent)
+    if(valorAtual != 0){
+        contador.textContent = String(valorAtual -1)
+    }
+    else{
+        alert('Valor zerado')
+    }
+    
+})
 
-    contador.textContent = String(valorAtual -1)
+input.addEventListener('input', () =>{
+    console.log(input.value)
 })
