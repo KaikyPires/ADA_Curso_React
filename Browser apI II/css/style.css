@@ -3,3 +3,16 @@
     color: white;
     background-color: green;
 }
+
+.body-darkMode{
+    background-color: black;
+}
+.body-whiteMode{
+    background-color: white;
+}
+.h1-darkMode{
+    color: white;
+}
+.h1-whiteMode{
+    color: black;
+}
