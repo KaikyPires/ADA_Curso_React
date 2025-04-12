@@ -40,7 +40,20 @@ const mode = document.querySelector("#mode");
 
 const h1 = document.querySelector("h1");
 
+// mode.addEventListener("click", () => {
+//   body.classList.toggle("body-darkMode");
+//   h1.classList.toggle("h1-darkMode");
+// });
+
+if (localStorage.getItem("darkMode") === "true") {
+  body.classList.add("body-darkMode");
+  h1.classList.add("h1-darkMode");
+}
+
 mode.addEventListener("click", () => {
   body.classList.toggle("body-darkMode");
   h1.classList.toggle("h1-darkMode");
+
+  const darkModeEnabled = body.classList.contains("body-darkMode");
+  localStorage.setItem("darkMode", darkModeEnabled);
 });
