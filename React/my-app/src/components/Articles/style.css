@@ -1,0 +1,23 @@
+#article{
+    display: flex;
+    gap:1rem;
+    padding: 2rem;
+    background-color: beige;
+    width: 890px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 4px 3px;
+}
+
+
+#article img{
+    width: 200px;
+    height: auto;
+    
+    border-radius: 5px;
+
+}
+
+#article .article-infos h3{
+    color: gray;
+    font-size: 14px;
+}
