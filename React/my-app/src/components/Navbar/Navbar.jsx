@@ -1,6 +1,6 @@
 import React from "react";
 import logoImg from "../../assets/images/Logo.png"
-import '../../styles/App.css'
+import "../../styles/App.css"
 
 class Navbar extends React.Component{
     // Metodo para renderizar nosso html

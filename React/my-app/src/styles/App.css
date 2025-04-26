@@ -45,3 +45,13 @@ header nav#navbar .nav-list li a:hover{
     
     
 }
+section#articles{
+    margin-top: 4rem;
+    margin-left: 12rem;
+    margin-right: 12rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 46px;
+    
+}
