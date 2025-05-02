@@ -12,7 +12,7 @@ class App extends React.Component {
     return (
       <>
         <Navbar />
-        {/* <section id="articles">
+        <section id="articles">
           <Article
             title="Dashboard"
             provider="NASA"
@@ -34,8 +34,8 @@ class App extends React.Component {
             description="Get the latest updates on market movements, economic indicators, and expert analysis to guide your investment strategy."
             thumb={finacialImage}
           />
-        </section> */}
-        <Counter />
+        </section>
+     
       </>
     );
   }
